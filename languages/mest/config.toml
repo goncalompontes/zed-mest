@@ -1,0 +1,4 @@
+name = "Mest"
+grammar = "mest"
+path_suffixes = ["mest"]
+
