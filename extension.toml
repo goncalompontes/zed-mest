@@ -8,4 +8,4 @@ repository = "https://github.com/goncalompontes/mestc"
 
 [grammars.mest]
 repository = "https://github.com/goncalompontes/tree-sitter-mest"
-rev = "99086301ffd7df6e4c6fa9bd638428c31fe0aaba"
+rev = "c963202425b1be4eede08b4d393c8d54cafa6ebc"
