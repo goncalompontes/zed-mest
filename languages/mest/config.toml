@@ -2,3 +2,6 @@ name = "Mest"
 grammar = "mest"
 path_suffixes = ["mest"]
 
+[lsp_adapter]
+name = "mest-lsp"
+
