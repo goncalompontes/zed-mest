@@ -1,3 +1,10 @@
+(type_expression
+  "type" @keyword
+  "in" @keyword)
+
+(type_expression
+  "and" @keyword)
+
 (if_expression
   "if" @keyword
   "then" @keyword
@@ -22,6 +29,12 @@
 (match_arm
   "|" @operator
   "=>" @operator)
+
+(union_type
+  "|" @operator)
+
+(type_expr
+  "->" @operator)
 
 [
   "+"
@@ -52,6 +65,9 @@
 (float) @number.float
 (boolean) @constant.builtin
 
+(variant
+  name: (identifier) @constructor)
+
 (let_binding
   name: (bind_pattern
     (identifier) @variable.definition))
@@ -70,3 +86,12 @@
   pattern: (pattern (identifier) @variable.definition))
 
 (atom (identifier) @variable)
+
+((atom (identifier) @constructor)
+  (#match? @constructor "^[A-Z]"))
+
+((match_arm
+  pattern: (pattern (identifier) @constructor))
+  (#match? @constructor "^[A-Z]"))
+
+(type_atom (identifier) @type)

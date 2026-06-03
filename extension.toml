@@ -8,7 +8,7 @@ repository = "https://github.com/goncalompontes/mestc"
 
 [grammars.mest]
 repository = "https://github.com/goncalompontes/tree-sitter-mest"
-rev = "5f89c007ccee8b0ab5bf5429d9f23adbbd4552fd"
+rev = "d73a77f44ef111ea48f8afeef57b2279618b532a"
 
 [language_servers.mest-lsp]
 name = "Mest Language Server"
